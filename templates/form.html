@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Disease Trend Analysis and Pharma Sales Forcast</h2>
+  <form action="/" method="post">
+    <div class="form-group">
+      <label for="US State Name">State Name:</label>
+      <input type="text" value="Alabama" class="form-control" id="email" placeholder="Enter State Name" name="state">
+    </div>
+    <div class="form-group">
+      <label for="Medicine Content">Medicine Name:</label>
+      <input type="text" value="0.9 % Sodium Chloride" class="form-control" id="pwd" placeholder="Enter Medicine Name" name="medicine">
+    </div>
+    <button type="submit" class="btn btn-success" >Submit</button>
+  </form>
+</div>
+{% if disp==False %}
+<div style="display: flex;justify-content: center;width: 100vw;">
+  <img src="static/linGraph.png" alt="graph" style="margin: auto;width: 43vw;">
+  <img src="static/polyGraph.png" alt="graph" style="margin: auto;width: 43vw;">
+</div>
+  <div style="display: flex;justify-content: center;width: 100vw;margin-top: 20px;">
+  <img src="static/arimaGraph.png" alt="graph" style="margin: auto;width: 43vw;">
+  <img src="static/graph.png" alt="graph" style="margin: auto;width: 43vw;">
+</div>
+{% endif %}
+
+
+</body>
+</html>
