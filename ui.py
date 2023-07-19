@@ -31,7 +31,8 @@ def analyse():
         res=analysis.analyse(st)
     return render_template('analyse_form.html',disp=disp)
 
-
-
-app.run(debug=True)
+@app.route('/trends',methods=['GET','POST'])
+def trends():
+    return render_template('news.html')
+app.run(debug=True,host='0.0.0.0',port=3333)
 
