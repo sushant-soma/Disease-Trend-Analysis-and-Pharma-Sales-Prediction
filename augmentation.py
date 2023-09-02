@@ -2,6 +2,7 @@ import pandas as pd
 import random
 import matplotlib.pyplot as plt
 
+
 df = pd.read_csv('all_year.csv')
 
 c = ['Prscrbr_Geo_Desc','Gnrc_Name']
